@@ -1,0 +1,6 @@
+id: bugfix-string-normalizer
+title: Fix username normalization edge cases
+language: python
+kind: bug_fix
+entry_point: normalizer.py
+timeout_seconds: 60

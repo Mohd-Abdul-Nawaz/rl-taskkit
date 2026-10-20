@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rl-taskkit"
+version = "0.1.0"
+description = "Reproducible RL environments for code-model training: prompts, buggy starters, golden reference solutions, and deterministic verifiers."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Mohd Abdul Nawaz" }]
+requires-python = ">=3.10"
+dependencies = [
+    "pytest>=7.4",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.4"]
+
+[project.scripts]
+rl-taskkit = "rl_taskkit.cli:console_main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F"]

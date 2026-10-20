@@ -1,0 +1,6 @@
+id: feature-lru-cache
+title: Implement a least-recently-used cache
+language: python
+kind: feature
+entry_point: lru.py
+timeout_seconds: 60

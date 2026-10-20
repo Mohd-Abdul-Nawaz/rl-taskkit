@@ -1,0 +1,7 @@
+id: perf-doc-freq
+title: Optimize top-k document-frequency ranking
+language: python
+kind: performance
+entry_point: docfreq.py
+timeout_seconds: 120
+perf_budget_ms: 1000
